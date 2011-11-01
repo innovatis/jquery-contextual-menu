@@ -1,14 +1,7 @@
-/* ===========================================================================
-   BPM Combined Asset File
-   MANIFEST: coffee-script (1.1.1.2) jquery (1.6.2) jquery-contextual-menu () spade (1.0.2)
-   This file is generated automatically by the bpm (http://www.bpmjs.org)
-   =========================================================================*/
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -19,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -31,7 +24,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -66,13 +59,14 @@ table {
   padding: 5px 0px;
   background: white;
   background: rgba(255,255,255,0.9);
+  border-radius: 5px;
 }
 
 .exo-contextual-menu ul{
   list-style: none;
 }
 
-.exo-contextual-menu ul li.disabled a{
+.exo-contextual-menu ul li.disabled button{
   color: #999999;
 }
 
@@ -85,7 +79,11 @@ table {
 li.exo-contextual-action{
   height: 19px;
 }
-.exo-contextual-menu ul li a{
+.exo-contextual-menu ul li button{
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
   border-bottom: 1px solid rgba(255,255,255,0.9);
   border-top:    1px solid rgba(255,255,255,0.9);
   border-bottom: 1px solid white;
@@ -100,37 +98,41 @@ li.exo-contextual-action{
   display: block;
 }
 
-.exo-contextual-menu ul li a span{
+.exo-contextual-menu ul li button span{
   height: 18px;
   color: #333;
   display: inline;
   float: left;
 }
-.exo-contextual-menu ul li a span.icon{
+.exo-contextual-menu ul li button span.icon{
   width: 30px;
   text-align: center;
 }
-.exo-contextual-menu ul li a span.label{
+.exo-contextual-menu ul li button span.label{
   text-align: left;
   width: 120px
 }
-.exo-contextual-menu ul li a span.hotkey{
+.exo-contextual-menu ul li button span.hotkey{
   width: 25px;
   text-align: center;
   float: left;
 }
 
-.exo-contextual-menu ul li a:hover {
-  color: white;
+.exo-contextual-menu ul li button:hover {
   border-bottom: 1px solid #516375;
   border-top: 1px solid #6d7b8b;
   background: #7a8da3;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8597ab', endColorstr='#687e95');
   background: -webkit-gradient(linear, left top, left bottom, from(#8597ab), to(#687e95));
   background: -moz-linear-gradient(top,  #8597ab,  #687e95);
+  color: white;
+}
+.exo-contextual-menu ul li button:hover span {
+  color: white;
+  font-weight: normal;
 }
 
-.exo-contextual-menu ul li.disabled a:hover {
+.exo-contextual-menu ul li.disabled button:hover {
   border-bottom: 1px solid rgba(255,255,255,0.9);
   border-top:    1px solid rgba(255,255,255,0.9);
   border-bottom: 1px solid white;
@@ -146,7 +148,7 @@ li.exo-contextual-action{
   color: #999999;
 }
 
-.exo-contextual-menu ul li.exo-seperator{
+.exo-contextual-menu ul li.exo-contextual-seperator{
   background: #dfdfdf;
   height: 1px;
   margin: 5px 0px;

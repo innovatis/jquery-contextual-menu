@@ -1,16 +1,43 @@
 <!doctype html>
 <html>
   <head>
-    <style>
+    <link rel='stylesheet' href='assets/bpm_styles.css' type='text/css' media='screen' charset='utf-8' />
     <script src="assets/bpm_libs.js"></script>
     <script>
       spade.require('jquery-contextual-menu');
-      $(function(){
-      });
+      $(function(){});
     </script>
   </head>
   <body>
-    <div id="parent">
+    <div class="exo-contextual-menu exo-shadow">
+      <ul>
+        <li class="exo-contextual-action">
+          <button href="#" data-emit="this.clone">
+            <span class="icon"></span>
+            <span class="label">Clone</span>
+            <span class="hotkey">C</span>
+          </button>
+        </li>
+        <li class="exo-contextual-action">
+          <button href="#" data-emit="this.destroy">
+            <span class="icon"></span>
+            <span class="label">Destroy</span>
+            <span class="hotkey">D</span>
+          </button>
+        </li>
+        <li class="exo-contextual-seperator">
+          <span class="icon">
+          </span>
+          <span class="label">
+        </li>
+        <li class="exo-contextual-action" >
+          <button href="#" data-emit="this.viewJob">
+            <span class="icon"></span>
+            <span class="label">View Job</span>
+            <span class="hotkey">J</span>
+          </button>
+        </li>
+      </ul>
     </div>
   </body>
 </html>

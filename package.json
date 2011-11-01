@@ -9,12 +9,13 @@
     },
     "bpm_styles.css": {
       "files": [
-
+        "css"
       ]
     }
   },
   "dependencies": {
     "spade": ">= 0",
-    "jquery": ">= 0"
+    "jquery": ">= 0",
+    "jquery-position": ">= 0"
   }
 }
