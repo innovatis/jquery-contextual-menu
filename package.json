@@ -1,0 +1,16 @@
+{
+  "name": "jquery-contextual-menu",
+  "homepage": "http://github.com/innovatis/jquery-contextual-menu",
+  "author": "Stefan Penner",
+  "version": "0.0.1",
+
+  "directories": {
+    "lib": "lib"
+  },
+
+  "bpm:build": {
+    "bpm_libs.js": {
+      "files": ["lib"]
+    }
+  }
+}
